@@ -1,6 +1,10 @@
-% Improved_3DRT_SOSP_Speech.m
+% Reconstruction script for the paper:
 %
+% Ziwei Zhao*, Yongwan Lim*, Dani Byrd, Shrikanth Narayanan, 
+% Krishna S. Nayak. "Improved 3D Real-Time MRI of Speech Production".
 %
+% This code performs a constrained reconstruction for dynamic 3D images.
+% 
 % Created by:   Yongwan Lim
 % Modified by:  Ziwei Zhao
 % Emails:       yongwanl@usc.edu
@@ -12,29 +16,30 @@ clear all;
 close all; 
 clc;
 
-directory = '/Users/zhaoziwei/Documents/MATLAB/3D RT Ziwei/demo/';
+addpath('../Improved_3DRT_Speech/');    % please change the path
+directory = '../Improved_3DRT_Speech/'; % please change the path
 outdirectory = 'results/';
 fileInfo = dir(strcat(directory, 'data/3d_*'));
 index = {'ori','vd'};
 
-for i  =  1 : 2  
+for i  =  1 : length(fileInfo)
 
     cd(strcat(directory, 'data/' , fileInfo(i).name, '/')); 
-    file = dir(strcat('lac10132019_','*ed.mat'));
+    file = dir(strcat('lac10132019_','*.mat'));
     
     param.imsize       = [84 84 12];  
     param.narms        = 1;     % number of arms per kx-ky plane to use
     param.slices2recon = 1:12;  % slices to reconstruct (1st slice has low SNR so it'd be better not to recon)
-    param.coil2recon   = 7; % 1:8; 
+    param.coil2recon   = 7;     % coil dimensions
     param.cfreq        = 0;     % center frequency 
-    param.lambda_sTV   = 0.008; 
-    param.lambda_tTV   = 0.03;  
+    param.lambda_sTV   = 0.008; % parameter for spatial TV
+    param.lambda_tTV   = 0.03;  % parameter for temporal TV
     param.niter        = 5;     % number of iteration in BART recon
     param.admm_rho     = 0.05;  % ADMM parameter
-    param.TR           = 5.048/1000;
+    param.TR           = 5.048/1000; % [ms]
     param.folder_index = i;
     param.tempwin      = 12;    % number of spiral arms per time point
-    param.windowsize   = 50;    % number of time frames for one reconstruction
+    param.windowsize   = 20;    % number of time frames for one reconstruction
      
     %% Reconstruction 
     matfname = fullfile(file.folder, file.name);                     

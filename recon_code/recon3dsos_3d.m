@@ -21,7 +21,7 @@ function [Recon, coilmap, reconInfo] = recon3dsos_3d(matfname, param)
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
     imsize        = param.imsize;       % image size [nx ny nz]
-    windowsize    = param.windowsize;  
+    windowsize    = param.windowsize;   % # of time frames for one recon
     slices2recon  = param.slices2recon; % slices to reconstruct 
     coil2recon    = param.coil2recon;   % coil elementes to use
     cfreq         = param.cfreq;        % freq on which to demodulate k-space data based   
@@ -127,7 +127,7 @@ function [Recon, coilmap, reconInfo] = recon3dsos_3d(matfname, param)
     nframes = windowsize; 
     
     if mod(max_nframes,nframes) ~= 0
-        cat_num = floor(max_nframes/nframes) + 1;
+        cat_num = floor(max_nframes/nframes) + 1; 
     else 
         cat_num = max_nframes/nframes;
     end
@@ -166,7 +166,7 @@ function [Recon, coilmap, reconInfo] = recon3dsos_3d(matfname, param)
 
     %%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    Recon = zeros(84,84,12,max_nframes);
+    Recon = zeros(imsize(1),imsize(2),imsize(3),max_nframes);
     
     for ij = 1 : cat_num
         if ij == 1
@@ -255,7 +255,7 @@ function [Recon, coilmap, reconInfo] = recon3dsos_3d(matfname, param)
 % Generate reconstruction header    
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % mkdir('./mrm_result');
-    [pathstr, name, ext] = fileparts(matfname);
+    [pathstr, name, ext]      = fileparts(matfname);
     
     reconInfo                 = struct('Date', date, 'Fname', name, 'recon_method','BART (v4.03) pics', 'recon_time',T);
 
