@@ -2,8 +2,12 @@
  
  Code and data for generating reconstruction results for the original and proposed 3D methods in this paper: *Ziwei Zhao, Yongwan Lim, Dani Byrd, Shrikanth Narayanan, Krishna S. Nayak. "Improved 3D Real-Time MRI of Speech Production"*. Submitted to Mag. Reson. Med.
  
- To run this code, successfully installation of BART reconstruction toolbox is required. This code uses BART version of 0.4.03.
- The installation guideline can be found here:  https://mrirecon.github.io/bart/.
+ ## Set up
+ 
+ To run this code, successfully installation of BART reconstruction toolbox is required. This code uses BART version of 0.4.03. 
+ You can download the specific version here:  https://github.com/mrirecon/bart/releases/tag/v0.4.03.
+ The installation details can be found here:  https://github.com/mrirecon/bart-workshop/blob/master/doc/quick-install.md.
+ For more information about BART, please visit: https://mrirecon.github.io/bart/.
  
  ## Code Structure
  
