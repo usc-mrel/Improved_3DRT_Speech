@@ -5,9 +5,9 @@
  ## Set up
  
  To run this code, successfully installation of BART reconstruction toolbox is required. This code uses BART version of 0.4.03. 
- You can download the specific version here:  https://github.com/mrirecon/bart/releases/tag/v0.4.03.
- The installation details can be found here:  https://github.com/mrirecon/bart-workshop/blob/master/doc/quick-install.md.
- For more information about BART, please visit: https://mrirecon.github.io/bart/.
+ - You can download the specific version here:  https://github.com/mrirecon/bart/releases/tag/v0.4.03.
+ - The installation details can be found here:  https://github.com/mrirecon/bart-workshop/blob/master/doc/quick-install.md.
+ - For more information about BART, please visit: https://mrirecon.github.io/bart/.
  
  ## Code Structure
  
