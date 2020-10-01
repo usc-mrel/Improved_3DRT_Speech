@@ -3,7 +3,6 @@
 % with spatio-temporal TV constraints 
 %
 % Make dynamic 3D volume after reconstructing 3D data
-% Generate intensity time plots for tongue regions
 %
 % use BART reconstruction tool (v4.03) 
 %
