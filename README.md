@@ -15,7 +15,7 @@
 - **lac10132019_19_06_16.mat** Proposed sampling method using rotated spiral arms with a golden angle increment in the kx-ky with variable density randomized temporal order along kz.
 
 ### Functions: 
-- **recon3dsos_3d.m** performs 3D stack-of-spirals sampling based on compressed sensing and parallel imaging with spatio-temporal Total Variation (TV) constraints.
+- **recon3dsos_3d.m** performs reconstruction for 3D stack-of-spirals sampling based on compressed sensing and parallel imaging with spatio-temporal Total Variation (TV) constraints.
 - **f_generate_window.m** generates a 2D or 3D Hanning window.
 - **f_disp4D.m** generates reconstructed videos in parallel sagittal views. 
 - **f_genV.m** generates an avi movie from image series. 
