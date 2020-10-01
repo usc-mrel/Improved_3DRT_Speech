@@ -34,6 +34,9 @@
 - **f_save_3d_dynamic_img.m** converts 3D image series to concatenated display of 2D image series. 
 - **f_save_3d_static_img.m** converts 3D static images to concatenated display of 2D static images. 
 
+ ## Citing
+ [Link]
+
 
 If you have any questions, please contact ziweiz@usc.edu
 
