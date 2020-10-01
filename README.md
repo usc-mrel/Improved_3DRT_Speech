@@ -37,7 +37,7 @@
  ## Citing
  [Link]
 
-
+ ## Contact
 If you have any questions, please contact ziweiz@usc.edu
 
  Ziwei Zhao, University of Southern California, MREL (Magnetic Resonance Engineering Laboratory, PI: Krishna S. Nayak, https://mrel.usc.edu/) June 2020.
