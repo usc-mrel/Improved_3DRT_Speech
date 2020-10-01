@@ -1,16 +1,16 @@
 # Improved_3DRT_Speech
  
- Code and data for generating reconstruction results for the original and proposed 3D methods in this paper: *Ziwei Zhao, Yongwan Lim, Dani Byrd, Shrikanth Narayanan, Krishna S. Nayak. "Improved 3D Real-Time MRI of Speech Production"*.
+ Code and data for generating reconstruction results for the original and proposed 3D methods in this paper: *Ziwei Zhao, Yongwan Lim, Dani Byrd, Shrikanth Narayanan, Krishna S. Nayak. "Improved 3D Real-Time MRI of Speech Production"*. Submitted to Mag. Reson. Med.
  
  To run this code, successfully installation of BART reconstruction toolbox is required. This code uses BART version of 0.4.03.
  The installation guideline can be found here:  https://mrirecon.github.io/bart/.
  
  ## Code Structure
  
- ### Demo scripts: 
-- **main_recon_3d.m** Reconstruction script to perform the proposed constrained reconstruction. The script generates reconstructed dynamic 3D volumes and save reconstructions in a .mat file and an .avi file in the ‘results’ folder. 
+ ### Demo script: 
+- **main_recon_3d.m** Reconstruction script to perform the proposed constrained reconstruction. The script generates reconstructed dynamic 3D volumes and saves reconstructions in a .mat file and an .avi file in the ‘results’ folder. 
  
- ### Dataset: 
+ ### Datasets: 
 - **lac10132019_19_21_07.mat** Original sampling method using spiral arms with constant increments in the kx-ky plane with linear temporal order along kz.
 - **lac10132019_19_06_16.mat** Proposed sampling method using rotated spiral arms with a golden angle increment in the kx-ky with variable density randomized temporal order along kz.
 
