@@ -13,8 +13,8 @@
  
  ### Initialization
  
- - Please add the path of this package in **main_recon_3d.m**.
- - Please change the local path of BART in **recon_sos_3d.m**.
+ - Please edit the path of this package in **main_recon_3d.m** line 19-20.
+ - Please change the local path of BART in **recon_sos_3d.m** line 45.
  
  
  ## Code Structure
