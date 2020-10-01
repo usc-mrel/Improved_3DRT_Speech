@@ -4,10 +4,18 @@
  
  ## Set up
  
+ ### BART Installation
+ 
  To run this code, successfully installation of BART reconstruction toolbox is required. This code uses BART version of 0.4.03. 
  - You can download the specific version here:  https://github.com/mrirecon/bart/releases/tag/v0.4.03.
  - The installation details can be found here:  https://github.com/mrirecon/bart-workshop/blob/master/doc/quick-install.md.
  - For more information about BART, please visit: https://mrirecon.github.io/bart/.
+ 
+ ### Initialization
+ 
+ - Please add the path of this package in **main_recon_3d.m**.
+ - Please change the local path of BART in **recon_sos_3d.m**.
+ 
  
  ## Code Structure
  
@@ -19,7 +27,7 @@
 - **lac10132019_19_06_16.mat** Proposed sampling method using rotated spiral arms with a golden angle increment in the kx-ky with a variable density randomized temporal order along kz.
 
 ### Functions: 
-- **recon3dsos_3d.m** performs reconstruction for 3D stack-of-spirals sampling based on compressed sensing and parallel imaging with spatio-temporal Total Variation (TV) constraints.
+- **recon_sos_3d.m** performs reconstruction for 3D stack-of-spirals sampling based on compressed sensing and parallel imaging with spatio-temporal Total Variation (TV) constraints.
 - **f_generate_window.m** generates a 2D or 3D Hanning window.
 - **f_disp4D.m** generates reconstructed videos in parallel sagittal views. 
 - **f_genV.m** generates an avi movie from image series. 
