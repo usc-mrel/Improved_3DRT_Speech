@@ -44,7 +44,7 @@ for i  =  1 : length(fileInfo)
     %% Reconstruction 
     matfname = fullfile(file.folder, file.name);                     
 
-   [recon, coilmap, reconInfo] = recon3dsos_3d(matfname, param);
+   [recon, coilmap, reconInfo] = recon_sos_3d(matfname, param);
 
     %% Save results
     suffix = sprintf('3d_%s_Nt%d_TRs%d_rt%.5f_rs%.5f_frames%d_niter%d', ...
