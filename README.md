@@ -11,8 +11,8 @@
 - **main_recon_3d.m** Reconstruction script to perform the proposed constrained reconstruction. The script generates reconstructed dynamic 3D volumes and saves reconstructions in a .mat file and an .avi file in the ‘results’ folder. 
  
  ### Datasets: 
-- **lac10132019_19_21_07.mat** Original sampling method using spiral arms with constant increments in the kx-ky plane with linear temporal order along kz.
-- **lac10132019_19_06_16.mat** Proposed sampling method using rotated spiral arms with a golden angle increment in the kx-ky with variable density randomized temporal order along kz.
+- **lac10132019_19_21_07.mat** Original sampling method using spiral arms with constant increments in the kx-ky plane with a linear temporal order along kz.
+- **lac10132019_19_06_16.mat** Proposed sampling method using rotated spiral arms with a golden angle increment in the kx-ky with a variable density randomized temporal order along kz.
 
 ### Functions: 
 - **recon3dsos_3d.m** performs reconstruction for 3D stack-of-spirals sampling based on compressed sensing and parallel imaging with spatio-temporal Total Variation (TV) constraints.
