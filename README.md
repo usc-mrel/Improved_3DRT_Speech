@@ -28,11 +28,11 @@
 
 ### Functions: 
 - **recon_sos_3d.m** performs reconstruction for 3D stack-of-spirals sampling based on compressed sensing and parallel imaging with spatio-temporal Total Variation (TV) constraints.
-- **f_generate_window.m** generates a 2D or 3D Hanning window.
-- **f_disp4D.m** generates reconstructed videos in parallel sagittal views. 
-- **f_genV.m** generates an avi movie from image series. 
-- **f_save_3d_dynamic_img.m** converts 3D image series to concatenated display of 2D image series. 
-- **f_save_3d_static_img.m** converts 3D static images to concatenated display of 2D static images. 
+- **generatewindows.m** generates a 2D or 3D Hanning window.
+- **display4Dimages.m** generates reconstructed videos in parallel sagittal views. 
+- **generatevideos.m** generates an avi movie from image series. 
+- **save3Ddynamicimages.m** converts 3D image series to concatenated display of 2D image series. 
+- **save3Dstaticimages.m** converts 3D static images to concatenated display of 2D static images. 
 
  ## Citing
  [Link]
