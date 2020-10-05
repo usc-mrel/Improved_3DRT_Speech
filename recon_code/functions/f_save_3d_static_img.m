@@ -1,5 +1,7 @@
 function result = f_save_3d_static_img (img, rot_angle, num_col, num_row)
 
+
+
 result = [];
 
 for bb=1:num_row
@@ -10,5 +12,4 @@ for bb=1:num_row
     end
     result = [result; concat_ver];
 end
-
 end
