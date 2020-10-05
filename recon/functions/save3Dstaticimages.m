@@ -1,4 +1,4 @@
-function result = save3Dstaticimges (img, rot_angle, num_col, num_row)
+function result = save3Dstaticimages (img, rot_angle, num_col, num_row)
 
 % Converts the 3D static images (x-y-z) to concatenated display of 2D image series
 % with specified rotated angle, columns and rows
