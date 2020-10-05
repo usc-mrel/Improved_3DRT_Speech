@@ -84,7 +84,7 @@ function [Recon, coilmap, reconInfo] = recon3dsos_3d(matfname, param)
         figure(100), imagesc(abs(sos_ta3dimg_display)), axis image off; colormap('gray');
     end
     
-    window = f_generate_window(HanningSize, 3); % 3D Hanning filter
+    window = generatewindows(HanningSize, 3); % 3D Hanning filter
     
     % time-averaged low-res 3D image
     talr3dimg = convn(ta3dimg, window, 'same'); % Smoothed by convolution with a 3D filter
@@ -97,7 +97,7 @@ function [Recon, coilmap, reconInfo] = recon3dsos_3d(matfname, param)
     coilmap = (coilmap(:,:,1:2:end,:) +coilmap(:,:,2:2:end,:))/2;
     
     if displayFigure
-        coilmap_display = f_save_3d_dynamic_img(coilmap, 90, 8, 3);
+        coilmap_display = save3Ddynamicimges(coilmap, 90, 8, 3);
         for cc = 1:nc
             figure(100+cc);
             imagesc(abs(coilmap_display(:,:,cc))), axis image off; colormap('gray');
