@@ -1,6 +1,12 @@
 function window = f_generate_window(wsize, dim)
 
 % Generate 2 or 3 dimensional hanning window 
+%
+% Inputs:   
+%   wsize:  window size
+%   dim:    image dimensions (2D or 3D)
+%
+
 if dim == 2
     wsize_x = wsize(2);
     wsize_y = wsize(1);
