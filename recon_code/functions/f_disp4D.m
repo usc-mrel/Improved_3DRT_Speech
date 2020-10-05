@@ -1,5 +1,15 @@
 function f_disp4D(fname, recon, framerate, angle, num_col, num_row)
 
+% Generate an avi video from 3D image series with concatenated display of slice dimension
+% Inputs:
+%        ims:  3D dynamic images
+%      fname:  output video name
+%  framerate:  frame rate
+%      angle:  specified rotated angle of displayed images 
+%    num_col:  number of columns in the concatenated display of slice dimension
+%    num_row:  number of rows in the concatenated display of slice dimension
+
+
 datafname = fname;
 
 recon_cs = abs(recon)/max(abs(recon(:)));
