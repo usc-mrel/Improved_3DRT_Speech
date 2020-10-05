@@ -1,8 +1,7 @@
 function f_genV(ims, name, framerate)
 
-% genMP4(ims, name, range)
 %
-% Generate mp4 from image series, such as for DCE
+% Generate a video from image series
 % Inputs:
 %   ims:    images
 %   name:   output video name
@@ -11,12 +10,7 @@ function f_genV(ims, name, framerate)
 % ZYH, 07/23/2014
 
 ims = abs(squeeze(ims));
-
 ims = (ims-min(ims(:)))/(max(ims(:))-min(ims(:)));
-% for n_im = 1:size(ims,3)
-%     im = ims(:,:,n_im);
-%     ims(:,:,n_im) = ims(:,:,n_im)/max(im(:));
-% end
 
 if ndims(ims) ~= 3
     error('ERROR: Wrong data dimension');
