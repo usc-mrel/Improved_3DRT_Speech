@@ -1,4 +1,4 @@
-function window = f_generate_window(wsize, dim)
+function window = generatewindows(wsize, dim)
 
 % Generate 2 or 3 dimensional hanning window 
 %
