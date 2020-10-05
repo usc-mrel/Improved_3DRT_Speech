@@ -36,6 +36,9 @@
 
  ## Citing
  [Link]
+ 
+ ## License
+ The Improved_3DRT_Speech packaged code is licensed under a 3-Clause BSD License.
 
  ## Contact
 If you have any questions, please contact ziweiz@usc.edu
