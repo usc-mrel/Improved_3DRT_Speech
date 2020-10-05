@@ -1,4 +1,4 @@
-function f_disp4D(fname, recon, framerate, angle, num_col, num_row)
+function display4Dimages(fname, recon, framerate, angle, num_col, num_row)
 
 % Generate an avi video from 3D image series with concatenated display of slice dimension
 % Inputs:
@@ -32,7 +32,7 @@ for n_frame = 1:size(im4D,3)
 end
 
 videoname2 = strcat(datafname(1:end-4),'.avi');
-f_genV(ims, videoname2, framerate);
+generatevideos(ims, videoname2, framerate);
 
 end
 
