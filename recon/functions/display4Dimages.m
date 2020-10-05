@@ -27,7 +27,7 @@ for n_frame = 1:size(im4D,3)
     elseif size(im4D,4) == 20
         ims(:,:,n_frame) = from20(im3D);
     else
-        ims(:,:,n_frame)= save3Dstaticimges(squeeze(im3D), angle, num_col, num_row);
+        ims(:,:,n_frame)= save3Dstaticimages(squeeze(im3D), angle, num_col, num_row);
     end
 end
 
