@@ -1,13 +1,11 @@
 function f_genV(ims, name, framerate)
 
-%
 % Generate a video from image series
 % Inputs:
 %   ims:    images
 %   name:   output video name
 %   framerate: frame rate
-%
-% ZYH, 07/23/2014
+
 
 ims = abs(squeeze(ims));
 ims = (ims-min(ims(:)))/(max(ims(:))-min(ims(:)));
