@@ -97,7 +97,7 @@ function [Recon, coilmap, reconInfo] = recon3dsos_3d(matfname, param)
     coilmap = (coilmap(:,:,1:2:end,:) +coilmap(:,:,2:2:end,:))/2;
     
     if displayFigure
-        coilmap_display = save3Ddynamicimges(coilmap, 90, 8, 3);
+        coilmap_display = save3Ddynamicimages(coilmap, 90, 8, 3);
         for cc = 1:nc
             figure(100+cc);
             imagesc(abs(coilmap_display(:,:,cc))), axis image off; colormap('gray');
