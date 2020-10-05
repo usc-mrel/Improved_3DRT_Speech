@@ -1,4 +1,4 @@
-function f_genV(ims, name, framerate)
+function generatevideos(ims, name, framerate)
 
 % Generate a video from image series
 % Inputs:
