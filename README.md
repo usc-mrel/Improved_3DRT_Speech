@@ -35,7 +35,7 @@
 - **save3Dstaticimages.m** converts 3D static images to concatenated display of 2D static images. 
 
  ## Citing
- [Link]
+ Zhao Z, Lim Y, Byrd D, Narayanan S, Nayak KS. Improved 3D real-time MRI of speech production. Magn Reson Med. 2020;00:1–15. https://doi.org/10.1002/mrm.28651
  
  ## License
  The Improved_3DRT_Speech packaged code is licensed under a 3-Clause BSD License.
